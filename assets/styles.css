@@ -1,0 +1,274 @@
+/* Mulish Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* shared styles */
+.same-color {
+    color: #FF5400;
+}
+
+.text-color{
+    color: #131318B2;
+
+}
+.btn-primary{
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    background: #FF5400;
+    padding: 14px 34px;
+    font-weight: 800;
+    cursor: pointer;
+    border: 0;
+}
+
+
+/* body */
+body{
+    margin: 5px 135px;
+}
+
+/* header styles */
+.nav-title {
+    display: flex;
+    align-items: center;
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+    gap: 15px;
+    width: 201px;
+    height: 52px; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 170px; */
+    
+}
+
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    gap: 20px;
+
+}
+
+nav li a {
+    text-decoration: none;
+     color: #424247; 
+} 
+
+
+
+/* banner style */
+.banner-img {
+    background-image: url(../Images/banner.png);
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 500px;
+    top: 146px;
+    border-radius: 16px;
+    
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+
+}
+.explore{
+    color:  #FFFFFF;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 800;
+    margin-top: 106px;
+    
+}
+.explore-description{
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 130px;
+    margin: 24px;
+    width: 70%;
+    
+}
+
+.find-now{
+    background-color: #FF5400 ;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    
+}
+.where{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 48px;
+}
+
+.where > input{
+    padding: 12px 1px 12px 0px;
+    width: 20%;
+    height: 10px;
+}
+ .first_select{
+    padding: 12px 12px 12px px;
+    width: 20%;
+    height: 40px;
+ }
+
+
+/* tour styles */
+.popular-tour-container{
+    display: flex;
+    margin-top: 100px;
+    gap: 100px;
+}
+.popular-title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.popular-content .point{
+    padding-top: 16px;
+    padding-right: 105px;
+}
+.popular-title .text-primary{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.content-img{
+    width: 100%;
+
+}
+/* destination styles */
+.destination{
+    text-align: center;
+    margin-top: 100px;
+}
+.destination-title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.destination-content{
+    padding: 0 150px;
+}
+
+.choose-row, .img-row{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+.choose-row-1, .img-row{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.choose-row-2, .img-row-2{
+    width: 100%;
+    max-width: 2000px;
+    height: 400px;
+    display: flex;
+    gap: 30px;
+    /* margin-left: px; */
+}
+/* .choose{
+    gap: 10px;
+} */
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+   body{
+    margin:  5px;
+   }
+   nav{
+    /* margin: auto; */
+    flex-direction: column;
+   }
+   nav>ul{
+    flex-direction: column;
+    margin-left: 0;
+   }
+   .nav-title{
+    width: 298px;
+   }
+  
+   .popular-tour-container{
+    flex-direction: column;
+   }
+   .choose-row,
+   .choose-row-1,
+   .choose-row-2{
+    /* margin: 5px auto; */
+    flex-direction: column;
+    height: auto;
+   }
+   .explore{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 80px;
+   }
+   .explore-description{
+    font-size: 8px;
+    padding: 0 130px;
+    margin-left: -65px;
+    margin-right: 24px;
+    width: 70%;
+   }
+   .where{
+    flex-direction: column;
+   }
+   .find-now{
+    background-color: #FF5400 ;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    margin: 0 100px;
+    
+    }
+    .where{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 48px;
+    }
+
+    .where > input{
+    padding: 12px 122px 12px 0px;
+    width: 20%;
+    height: 10px;
+    margin-left: 100px;
+    }
+    .first_select{
+    padding: 12px 12px 12px 0px;
+    width: 51%;
+    height: 40px;
+    margin-left: 100px;
+    }
+    .popular-tour-container{
+        margin-top: 25px;
+        gap: 38px;
+        margin-left: 5px;
+    }
+    .popular-content .point{
+        padding-top: 8px;
+        padding-right: 20px;
+    }
