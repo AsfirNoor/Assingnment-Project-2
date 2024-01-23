@@ -154,7 +154,7 @@ nav li a {
 /* tour styles */
 .popular-tour-container {
     display: flex;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     gap: 100px;
     margin-top: 260px;
 }
@@ -175,7 +175,7 @@ nav li a {
     padding-bottom: 24px;
 }
 .popular-title-content{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
 }
 /* destination styles */
@@ -235,8 +235,202 @@ nav li a {
     font-size: 40px;
     font-weight: 800;
 }
-.why-title-content{
+.why-content{
     padding: 0 150px;
+}
+.why-container{
+    display: flex;
+    gap: 20px;
+}
+.container-box{
+    background-color:#FBB56333;
+    border: 1px solid #FBB56333;
+    border-radius: 16px;
+    padding: 30px;
+}
+.container-box-1{
+    background-color:#dbf2f8;
+    border: 1px solid #c7ecf5;
+    border-radius: 16px;
+    padding: 30px;
+}
+.container-box-stats{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.container-box-stats-title{
+    font-size: 16px;
+    font-weight: 400;
+}
+.container-box-2{
+    background-color: #fcdddd;
+    border: 1px solid #f8cccc;
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* deals styles */
+.deals{
+    text-align: center;
+    margin-top: 70px;
+}
+.deals-title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.deals-content{
+    padding: 0 150px;
+}
+.deals-banner{
+    text-align: center;
+    
+}
+.deals-banner-img{
+    background-image: url(../Images/Rectangle\ 12.png);
+    width: 100%;      /* img size small */
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    position: relative;
+}
+.deals-banner-img-title{
+   font-weight: 800;
+   font-size: 24px;
+   ;
+}
+.deals-back{
+    background-color: #FFF;
+}
+
+
+.deals-banner-img-two{
+    background-image: url(../Images/Rectangle\ 13.png);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 24px;
+    position: relative;
+    border-radius: 16px;
+}
+.deals-banner-img-three{
+    background-image: url(../Images/Rectangle\ 14\ .png);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 24px;
+    position: relative;
+    border-radius: 16px;
+}
+.deals-content-info{
+    background-color: #FFFFFF;
+    width: 35%;
+    position: absolute;
+    right: 272px;
+    height: 425px;
+    top: 40px;
+    border-radius: 13px;
+}
+.deals-content-info-two{
+    background-color: #FFFFFF;
+    width: 35%;
+    position: absolute;
+    left: 272px;
+    height: 425px;
+    top: 40px;
+    border-radius: 13px;
+}
+
+/* get styles */
+.get-lost-container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 150px;
+    margin-top: 100px;
+}
+.get-lost-title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.text-color-two{
+    font-weight: 700;
+    font-size: 16px;
+}
+.video-container video{
+    width: 80%;
+    border-radius: 15px;
+}
+
+.deals-banner .deals-banner-img-title{
+    text-align: start;
+    padding: 10px;
+}
+
+/* news styles */
+.news-container{
+    display: flex;
+    gap: 100px;
+    margin-top: 70px;
+    
+   
+}
+.news-container-from{
+    border: 2px solid #FF5400;
+    height: 410px;
+    width: 100%;
+    padding: 20px 40px;
+}
+.news-container-from > .contact input[type="text"],
+.contact input[type="email"]
+{   display: block;
+    margin-bottom: 25px;
+    padding: 45px 0px;
+    color: rgb(117, 117, 117);
+    border-radius: 5px;
+    background: rgb(221 167 167);
+    border: 1px solid #e5a6d1;
+    width: 100%;
+}
+
+/* footer styles */
+
+.main-footer{
+    background:gray;
+    width: 100%;
+    height: 330px;
+    padding-top: 50px;
+    padding-left: 0px;
+    margin-top: 70px;
+}
+
+
+.footer-title{
+    display: flex;
+    align-items: center;
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+    gap: 15px;
+    width: 201px;
+    height: 52px;
+    padding-left: 652px;
+}
+.footer-head{
+    text-align: center;
+    
+}
+.social-media, 
+.line-pic {
+    margin-bottom: 50px;
+    
 }
 
 /* mobile device */
@@ -244,6 +438,7 @@ nav li a {
     body {
         margin-left: 7px;
         margin-right: 7px;
+        margin-bottom: 10px;
     }
 
     nav {
@@ -305,14 +500,16 @@ nav li a {
     }
     .popular-title-content,
     .destination-title-content,
-    .why-title-content {
+    .why-title-content,
+    .get-lost-title-content {
         font-size: 14px;
     }
     .destination,.why{
         margin-top: 24px;
     }
     .destination-title,
-    .why-title{
+    .why-title,
+    .get-lost-title{
         font-size: 20px;
     }
     .destination-content
@@ -333,7 +530,91 @@ nav li a {
         height: auto;
         margin-bottom: 5px;
     }
+    .why-content{
+        padding: 7px ;
+        gap: 16px;
+    }
+    .why-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .why-container, .icons{
+        width: auto;
+    }
+    .container-box-2{
+        margin-top: 10px;
+    }
+    .deals{
+        margin-top: 25px;
+    }
+    .deals-title{
+        font-size: 20px;
+    }
+    .deals-content{
+        padding: 0 4px;
+    }
+    .get-lost-container{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 15px;
+    }
+    .video-container video{
+        width: 100%;
+    }
+    .deals-content-info{
+        width: 86%;
+        right: 26px;
+        height: 275px;
+        top: 217px;
+        
+    }
+    .deals-content-info-two{
+        width: 86%; 
+        left: 30px;
+        height: 279px;
+        top: 210px;
+    }
+    .news-container{
+        flex-direction: column;
+        margin-top: 25px;
+        gap: 25px;
+    }
+    .news-container-from{
+        width: 100%;
+        padding: 0;
+    }
+    .news-container-from > .contact input[type="text"],
+    .contact input[type="email"]{
+        margin-bottom: 35px;
+        padding: 26px 85px;
+        background: #e1b1b1; 
+        width: 57%;
+        
+    }
+    .main-footer{
+        width: 100%;
+        height: 375px;
+        padding-top: 10px;
+        padding-left: 0px;
+        margin-top: 25px;
+    }
+    .footer-title{
+        font-size: 32px;
+        font-weight: 800;
+        gap: 15px;
+        width: 201px;
+        height: 52px;
+        padding-left: 54px;
+    }
+    .footer-head > .social-media, 
+    .line-pic {
+    margin-bottom: 20px;
+    
+}
+
 }   
+
+
     /* .popular-tour-container{
     flex-direction: column;
    }
